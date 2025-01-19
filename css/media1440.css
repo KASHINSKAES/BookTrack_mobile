@@ -1,0 +1,414 @@
+@media screen and (max-width: 1440px) {
+    @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    #blobs{
+      position: absolute;
+      margin: 0 auto;
+      width: 1440px;
+      background-size: cover;
+    }
+    body{
+      
+      overflow-x: hidden;
+      width: 100vw;
+    }
+    .contain {
+      width: 1240px;
+      margin: 0 auto;
+    }
+    
+    header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 0;
+      height: 100%;
+    }
+    
+    .blocks_button, .button-form {
+      display: flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      justify-content: center;
+    
+      margin-top: 34px;
+    }
+    .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0 50px;
+      margin-top: 22px;
+    }
+    
+    .elem_menu {
+      text-decoration: none;
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 10px;
+      color: black;
+      -webkit-transition: .9s all;
+      transition: .9s all;
+    }
+    
+    .elem_menu:hover,.elem-footer:hover  {
+      color: #FD521B;
+    }
+    
+    .elem1{
+      margin-left: 0;
+    }
+    .button{
+      position: relative;
+      text-decoration: none;
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      border: 3px solid #5775CD;
+      border-radius: 25px;
+      padding: 11px 52px;
+      color: black;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .button:hover{
+      color: white;
+      background-color: #5775CD;
+    }
+    .home_block1{
+      margin-top: 250px;
+      width: 990px;
+      position: relative;
+      z-index: 1;
+    }
+    h1{
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-weight: 900;
+      font-size: 55px;
+    
+      width: 951px;
+    }
+    .home_block1>h1{
+      text-align: center;
+    }
+    .home_block1>h1{
+      width: 970px;
+    }
+    .countdown-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    
+      margin-bottom: 16px;
+    }
+    
+    .countdown-item {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px;
+    }
+    
+    .countdown-item>span {
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-size: 55px;
+      font-weight: bold;
+    }
+    .countdown-item>.ci-text{
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-size: 24px;
+      color:#444444;
+    }
+    p, label,.elem-footer,.form__error,.form__empty-error{
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+    
+    }
+    
+    .home_block1 p{
+      text-align: center;
+    }
+    .blocks_button>.elem1{
+      padding: 8px 63px;
+      
+    }
+    .blocks_button>.elem2{
+      padding: 8px 30px;
+      margin-left: 29px;
+    }
+    .home,.about{
+      display: flex;
+    }
+    .home_block2 img{
+      position: relative;
+      width: 869px;
+      height: 1006px;
+      z-index: -1;
+      margin-left: -315px;
+      margin-top: 40px;
+      filter: blur(1px);
+    }
+    .arrow{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
+      animation: TopBottom 4s  infinite;
+    
+    } 
+    @keyframes TopBottom{
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0,100%);
+      }
+    }
+    .about-block1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .about-block1 h1{
+      width: 491px;
+    }
+    .about-block1 .text1, .benefit .text2{
+      color: #5775CD;
+    
+    }.about-block1 .text2,.benefit .text1,.reviews .text1{
+      color: #FD521B;
+    }
+    .about_button  {
+      display: flexbox;
+      display: flex;
+    
+      margin-top: 14px;
+    }
+    .text-about{
+      margin-top:14px;
+      margin-bottom: 14px;
+    
+      width: 507px ;
+    }
+    
+    .benefit{
+      margin-top: 59px;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+    
+    }
+    .benefit-h1{
+        width: 773px;
+    }
+    .slider-foto1{grid-area: a;}
+    .slider-foto2{grid-area: b;}
+    .slider-foto3{grid-area: c;}
+    .slider-foto4{grid-area: d;}
+    .slider-foto5{grid-area: e;}
+    .slider-foto6{grid-area: f;}
+    .content_2 {
+      margin-top: 60px;
+      position: relative;
+      display: grid;
+      grid-template-areas: 
+      "a a ." 
+      ". b b" 
+      "c c ."
+      ". d d"
+      "e e ."
+      ". f f"
+      ;
+    }
+    .slider-foto1,.slider-foto2,.slider-foto3,.slider-foto4,.slider-foto5,.slider-foto6{
+      margin: 20px;
+      width: 800px;
+    }
+    .publishingHouses{
+      margin-top: 300px;
+    }
+    .publishingHouses>h1{
+      width: 1340px;
+      text-align: center;
+    }
+    .reviews{
+      margin-top: 115px;
+    }
+    .reviews>h1{
+      width: 1400px;
+      text-align: center;
+    }
+    .review{
+      width: 500px;
+      margin-top: 30px;
+    
+      opacity: 0;
+      margin-left: 30px;
+    }
+    .all-review{
+      margin-top: 100px;
+      margin-left: -30px;
+    }
+    .review p{
+      margin-top: 10px;
+      width: 512px;
+    }
+    .logo-review{
+      position: absolute;
+      margin-left: -92px;
+      margin-top: 62px;
+      width: 200px;
+      height: 200px;
+    }
+     .review-bottom{
+      display: flex;
+      align-items: center;
+    }
+    .review-top-text{
+      margin-top: 20px;
+    }
+    .review-top-text p{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .review-bottom{
+      margin-left: 500px;
+    }
+    .review-top{
+      margin-left: 24px;
+    }
+    .review-basic{
+      padding: 15px;
+      padding-left: 100px;
+    
+      width: 580px;
+      background-color: #B8BEF6;
+      border-radius: 50px;
+    }
+    .Elem2 , .Elem4{
+      margin-left: 580px;
+    }
+    .forma{
+      margin-top: 300px;
+      
+      display: flex;
+      align-items: center;
+    }
+    .forma h1{
+      width: 700px;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      width: 699px;
+
+      margin-left: 20px;
+    }
+    input{
+      width: 500px;
+      height: 50px;
+    }
+    textarea{
+      width: 500px;
+      height: 300px;
+    }
+    input, textarea{
+      border-bottom: 10px solid #5775CD;
+      border-left: 10px solid #5775CD;
+      border-radius: 19px;
+      border-top: none;
+      border-right:  none;
+      z-index: 100;
+    
+      font-family: "M PLUS Rounded 1c", sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+    
+    }
+    .button-form{
+      width: 254px;
+      background: rgba(0,0,0,0);
+      text-decoration: none;
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      border: 3px solid #5775CD;
+      border-radius: 25px;
+      padding: 0 52px;
+      color: black;
+      overflow: hidden;
+      transition: all 1s;
+    }
+    .button-form:hover{
+      background-color: #5775CD;
+      color: white;
+    
+    }
+    label{
+      margin-top: 50px;
+    }
+    footer{
+      margin-top: 270px;
+      position: absolute;
+      width: 100%;
+      height: 550px;
+      background: #B8BEF6;
+    
+     
+    }
+    .contain-footer{
+      margin: 0 auto;
+      width: 1530px;
+      display: flex;
+      align-items: center;
+    
+      top: 0;
+      height: 100%;
+    }
+    .menu-footer{
+      margin-left: 50px;
+      display: flex;
+      flex-direction:column;
+    }
+    .elem-footer {
+      text-decoration: none;
+      margin: 12px;
+      color: black;
+      transition: .9s all;
+      width: 240px;
+    }
+    .contant-footer{
+      margin-left: 20px;
+      display: flex;
+      flex-direction:column;
+    }
+    .contant-footer p{
+      width: 364px;
+      margin: 10px;
+    }
+    .footer-icon{
+      display: flex;
+      margin-left: 10px;
+    }
+    .footer-icon img{
+      width: 60px;
+      margin: 10px;
+    }
+    .footer-arow{
+      margin-left: 50px;
+    }
+  }

@@ -1,0 +1,140 @@
+.items-wrap {
+  margin-left: -200px;
+    margin-top: 95px;
+    width: 1920px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: 20px;
+  }
+
+  .items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 20px;
+    counter-reset: item;
+    justify-content: space-around;
+    min-width: 100%;
+  }
+  .item {
+    counter-increment: item;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    transition: all 0.1s ease-in-out;
+  }
+  .item img{
+    width: 300px;
+    height:300px;
+  }
+  /* .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  } */
+  
+  .marquee {
+    animation: scroll 10s linear infinite;
+  }
+  .reverce {
+    animation-direction: reverse;
+  }
+  /* .items-wrap:hover .marquee {
+    animation-play-state: paused;
+  } */
+  
+  .perfscan {
+    margin: 20px 0;
+    text-align: center;
+    bottom: 0;
+    background: #fff;
+    padding: 5px;
+  }
+  .perfscan hr {
+    border: solid #999;
+    border-width: 1px 0 0 0;
+    max-width: 50%;
+    margin: 0 auto 20px;
+  }
+  .perfscan a {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 20px));
+    }
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    .items-wrap {
+      margin-left: -200px;
+        margin-top: 95px;
+        width: 1920px;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        user-select: none;
+        gap: 20px;
+      }
+    
+      .items {
+        flex-shrink: 0;
+        display: flex;
+        gap: 20px;
+        counter-reset: item;
+        justify-content: space-around;
+        min-width: 100%;
+      }
+      .item {
+        counter-increment: item;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        transition: all 0.1s ease-in-out;
+      }
+      .item img{
+        width: 200px;
+        height:160px;
+      }
+      
+      .marquee {
+        animation: scroll 10s linear infinite;
+      }
+      .reverce {
+        animation-direction: reverse;
+      }
+      
+      .perfscan {
+        margin: 20px 0;
+        text-align: center;
+        bottom: 0;
+        background: #fff;
+        padding: 5px;
+      }
+      .perfscan hr {
+        border: solid #999;
+        border-width: 1px 0 0 0;
+        max-width: 50%;
+        margin: 0 auto 20px;
+      }
+      .perfscan a {
+        color: #000;
+        font-weight: bold;
+      }
+      
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(calc(-100% - 20px));
+        }
+      }
+  }
+  
